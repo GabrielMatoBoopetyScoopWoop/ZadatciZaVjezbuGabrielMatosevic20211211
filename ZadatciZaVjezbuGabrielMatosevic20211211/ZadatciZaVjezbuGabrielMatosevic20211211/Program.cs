@@ -113,7 +113,7 @@ namespace ZadatciZaVjezbuGabrielMatosevic20211211
                         KlasaB ObjektB = new KlasaB();
                         Console.Write("Upisite recenicu sa vise od 2 znaka:");
                         string Recenica = Console.ReadLine();
-                        Console.WriteLine("Recenica je " + ((Recenica.Length < 2) ? "manja od dva znaka" : ObjektB.BezPrvogIZadnjeg(Recenica)));
+                        Console.WriteLine((Recenica.Length <= 2) ? "Recenica nije veca od dva znaka" : "Recenica je " + ObjektB.BezPrvogIZadnjeg(Recenica));
                         break;
                     case 3:
                         Sort ObjektSortAscending = new Sort();
